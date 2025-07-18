@@ -1,0 +1,28 @@
+^C:\USERS\USER\DOCUMENTS\MY PROJECT\ZEROWASTE\FRONTEND\BUILD\WINDOWS\X64\CMAKEFILES\FCDDC044B7D6C1F55D87CC3FB9850201\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\flutter "PROJECT_DIR=C:\Users\USER\Documents\my project\zerowaste\frontend" FLUTTER_ROOT=C:\flutter "FLUTTER_EPHEMERAL_DIR=C:\Users\USER\Documents\my project\zerowaste\frontend\windows\flutter\ephemeral" "PROJECT_DIR=C:\Users\USER\Documents\my project\zerowaste\frontend" "FLUTTER_TARGET=C:\Users\USER\Documents\my project\zerowaste\frontend\lib\main.dart" DART_DEFINES=RkxVVFRFUl9WRVJTSU9OPTMuMzIuNg==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049MDc3YjRhNGNlMQ==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049NzJmMmIxOGJiMA==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My44LjE= DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false "PACKAGE_CONFIG=C:\Users\USER\Documents\my project\zerowaste\frontend\.dart_tool\package_config.json" C:/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DOCUMENTS\MY PROJECT\ZEROWASTE\FRONTEND\BUILD\WINDOWS\X64\CMAKEFILES\AF9673319F51F04C8D82CADAB8ECE00A\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DOCUMENTS\MY PROJECT\ZEROWASTE\FRONTEND\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/USER/Documents/my project/zerowaste/frontend/windows" "-BC:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64" --check-stamp-file "C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/flutter/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

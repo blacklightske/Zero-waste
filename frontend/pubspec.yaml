@@ -1,0 +1,77 @@
+name: zerowaste_lite
+description: A Flutter app for reducing household food waste through smart tracking and AI-powered recipe suggestions.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # HTTP & API
+  dio: ^5.4.0
+  json_annotation: ^4.8.1
+  http: ^1.1.0
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # UI
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  
+  # Storage & Security
+  flutter_secure_storage: ^9.0.0
+  flutter_dotenv: ^5.1.0
+  
+  # Local Storage & Notifications
+  shared_preferences: ^2.2.2
+  flutter_local_notifications: ^19.3.0
+  
+  # Date & Time
+  intl: ^0.20.2
+  
+  # Icons
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.7
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - .env
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/icons/app_icon.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/icons/app_icon.png"
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "assets/icons/app_icon.png"
+
+
+ 
+  

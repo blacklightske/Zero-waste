@@ -1,0 +1,10 @@
+^C:\USERS\USER\DOCUMENTS\MY PROJECT\ZEROWASTE\FRONTEND\BUILD\WINDOWS\X64\CMAKEFILES\DB56F616A4C8CEC1C5E41B8CE8361850\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/USER/Documents/my project/zerowaste/frontend/windows" "-BC:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/zerowaste_lite.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
