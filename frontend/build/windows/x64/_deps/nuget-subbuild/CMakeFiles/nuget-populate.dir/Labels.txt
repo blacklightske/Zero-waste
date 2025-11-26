@@ -1,0 +1,15 @@
+# Target labels
+ nuget-populate
+# Source files and their labels
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/nuget-populate
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/01dec57e51067b266a5d41abfbca717d/nuget-populate.rule
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/947dc93bf6f9cdd8f18b6a8bc843fd4a/nuget-populate-complete.rule
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-build.rule
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-configure.rule
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-copyfile.rule
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-download.rule
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-install.rule
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-mkdir.rule
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-patch.rule
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-test.rule
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-update.rule

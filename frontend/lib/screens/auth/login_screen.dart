@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../services/django_auth_service.dart';
-import '../../utils/animations.dart';
 import 'signup_screen.dart';
 import '../home/home_screen.dart';
 

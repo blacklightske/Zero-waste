@@ -137,6 +137,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\USER\Documents\my project\zerowaste\frontend\build\windows\x64\plugins\file_selector_windows\file_selector_windows_plugin.vcxproj">
+      <Project>{C1B476A9-8E81-37EB-9373-4BFA95F6B257}</Project>
+      <Name>file_selector_windows_plugin</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\USER\Documents\my project\zerowaste\frontend\build\windows\x64\plugins\flutter_local_notifications_windows\shared\flutter_local_notifications_windows.vcxproj">
       <Project>{F816E9F3-2F76-3890-A931-CC9254D48221}</Project>
       <Name>flutter_local_notifications_windows</Name>
@@ -152,6 +156,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\Users\USER\Documents\my project\zerowaste\frontend\build\windows\x64\flutter\flutter_wrapper_plugin.vcxproj">
       <Project>{54B4BF2C-D3B3-3971-8CE0-C6D8749D96DF}</Project>
       <Name>flutter_wrapper_plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\USER\Documents\my project\zerowaste\frontend\build\windows\x64\plugins\geolocator_windows\geolocator_windows_plugin.vcxproj">
+      <Project>{F67618EC-B12C-3A34-A176-F47A09160A19}</Project>
+      <Name>geolocator_windows_plugin</Name>
     </ProjectReference>
     <ProjectReference Include="C:\Users\USER\Documents\my project\zerowaste\frontend\build\windows\x64\runner\zerowaste_lite.vcxproj">
       <Project>{10ACCF57-A15F-3ADF-A91E-066933F6A076}</Project>

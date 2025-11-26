@@ -1,4 +1,5 @@
-from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
 from .views import (
     FoodItemListCreateView,
     FoodItemDetailView,
@@ -10,8 +11,34 @@ from .views import (
     dashboard_summary,
     food_items_expiring,
     todos_due_today,
-    user_data_summary
+    user_data_summary,
+    # Marketplace ViewSets
+    CategoryViewSet,
+    WasteProductViewSet,
+    InterestViewSet,
+    MessageViewSet,
+    ReviewViewSet,
+    UserProfileViewSet,
+    FavoriteViewSet,
+    ReportViewSet,
+    ProductImageViewSet,
+    # Marketplace function views
+    marketplace_summary,
+    marketplace_stats,
+    user_conversations
 )
+
+# Create router for marketplace ViewSets
+router = DefaultRouter()
+router.register(r'marketplace/categories', CategoryViewSet, basename='category')
+router.register(r'marketplace/products', WasteProductViewSet, basename='product')
+router.register(r'marketplace/interests', InterestViewSet, basename='interest')
+router.register(r'marketplace/messages', MessageViewSet, basename='message')
+router.register(r'marketplace/reviews', ReviewViewSet, basename='review')
+router.register(r'marketplace/profiles', UserProfileViewSet, basename='profile')
+router.register(r'marketplace/favorites', FavoriteViewSet, basename='favorite')
+router.register(r'marketplace/reports', ReportViewSet, basename='report')
+router.register(r'marketplace/images', ProductImageViewSet, basename='productimage')
 
 app_name = 'api'
 
@@ -34,4 +61,12 @@ urlpatterns = [
     # Dashboard and Summary
     path('dashboard/', dashboard_summary, name='dashboard_summary'),
     path('user-data/', user_data_summary, name='user_data_summary'),
+    
+    # Marketplace summary endpoints
+    path('marketplace/summary/', marketplace_summary, name='marketplace_summary'),
+    path('marketplace/stats/', marketplace_stats, name='marketplace_stats'),
+    path('marketplace/conversations/', user_conversations, name='user_conversations'),
+    
+    # Include marketplace router URLs
+    path('', include(router.urls)),
 ]

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\USER\Documents\my project\zerowaste\frontend\windows\flutter\ephemeral\.plugin_symlinks\geolocator_windows\windows\geolocator_windows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\USER\Documents\my project\zerowaste\frontend\windows\flutter\ephemeral\.plugin_symlinks\geolocator_windows\windows\geolocator_plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\USER\Documents\my project\zerowaste\frontend\windows\flutter\ephemeral\.plugin_symlinks\geolocator_windows\windows\include\geolocator_windows\geolocator_windows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\USER\Documents\my project\zerowaste\frontend\windows\flutter\ephemeral\.plugin_symlinks\geolocator_windows\windows\geolocator_plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\USER\Documents\my project\zerowaste\frontend\windows\flutter\ephemeral\.plugin_symlinks\geolocator_windows\windows\geolocator_enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\USER\Documents\my project\zerowaste\frontend\windows\flutter\ephemeral\.plugin_symlinks\geolocator_windows\windows\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{80D071EF-C9D6-3B72-9C33-D4EA5099736A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{29432166-D688-3F3B-B44D-B0707E733277}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

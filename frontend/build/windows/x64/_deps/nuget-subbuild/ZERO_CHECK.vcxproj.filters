@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\USER\Documents\my project\zerowaste\frontend\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\01dec57e51067b266a5d41abfbca717d\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{746772C3-54C0-3E82-BFCD-EB84C47B37AC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

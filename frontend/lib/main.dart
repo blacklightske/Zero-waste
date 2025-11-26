@@ -7,6 +7,7 @@ import 'screens/auth/login_screen.dart';
 import 'screens/home/home_screen.dart';
 import 'services/django_auth_service.dart';
 import 'services/django_data_service.dart';
+import 'services/marketplace_service.dart';
 import 'services/notification_service.dart';
 
 void main() async {
@@ -38,6 +39,12 @@ class ZeroWasteApp extends StatelessWidget {
             Provider.of<DjangoAuthService>(context, listen: false),
           ),
           update: (context, auth, previous) => previous ?? DjangoDataService(auth),
+        ),
+        ChangeNotifierProxyProvider<DjangoAuthService, MarketplaceService>(
+          create: (context) => MarketplaceService(
+            Provider.of<DjangoAuthService>(context, listen: false),
+          ),
+          update: (context, auth, previous) => previous ?? MarketplaceService(auth),
         ),
       ],
       child: MaterialApp(

@@ -150,7 +150,7 @@ class DjangoAuthService extends ChangeNotifier {
       _setLoading(true);
       clearError();
 
-      final success = await _apiService.resetPassword(email);
+      final success = await _apiService.resetPassword(email: email);
       
       _setLoading(false);
       return success;

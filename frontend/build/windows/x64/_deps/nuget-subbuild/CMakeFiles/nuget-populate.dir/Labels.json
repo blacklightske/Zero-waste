@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/nuget-populate"
+		},
+		{
+			"file" : "C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/01dec57e51067b266a5d41abfbca717d/nuget-populate.rule"
+		},
+		{
+			"file" : "C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/947dc93bf6f9cdd8f18b6a8bc843fd4a/nuget-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-copyfile.rule"
+		},
+		{
+			"file" : "C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/2189bb1d13391b91d6560af4215b8871/nuget-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nuget-populate"
+		],
+		"name" : "nuget-populate"
+	}
+}

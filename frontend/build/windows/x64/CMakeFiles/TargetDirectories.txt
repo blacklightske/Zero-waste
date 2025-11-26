@@ -8,9 +8,15 @@ C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/flutter/
 C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/runner/CMakeFiles/zerowaste_lite.dir
 C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/runner/CMakeFiles/INSTALL.dir
 C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/runner/CMakeFiles/ALL_BUILD.dir
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/plugins/file_selector_windows/CMakeFiles/file_selector_windows_plugin.dir
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/plugins/file_selector_windows/CMakeFiles/INSTALL.dir
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/plugins/file_selector_windows/CMakeFiles/ALL_BUILD.dir
 C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/plugins/flutter_secure_storage_windows/CMakeFiles/flutter_secure_storage_windows_plugin.dir
 C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/plugins/flutter_secure_storage_windows/CMakeFiles/INSTALL.dir
 C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/plugins/flutter_secure_storage_windows/CMakeFiles/ALL_BUILD.dir
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/plugins/geolocator_windows/CMakeFiles/geolocator_windows_plugin.dir
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/plugins/geolocator_windows/CMakeFiles/INSTALL.dir
+C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/plugins/geolocator_windows/CMakeFiles/ALL_BUILD.dir
 C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/plugins/flutter_local_notifications_windows/CMakeFiles/INSTALL.dir
 C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/plugins/flutter_local_notifications_windows/CMakeFiles/ALL_BUILD.dir
 C:/Users/USER/Documents/my project/zerowaste/frontend/build/windows/x64/plugins/flutter_local_notifications_windows/shared/CMakeFiles/INSTALL.dir

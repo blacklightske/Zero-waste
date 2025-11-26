@@ -1,0 +1,10 @@
+^C:\USERS\USER\DOCUMENTS\MY PROJECT\ZEROWASTE\FRONTEND\BUILD\WINDOWS\X64\CMAKEFILES\DB56F616A4C8CEC1C5E41B8CE8361850\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

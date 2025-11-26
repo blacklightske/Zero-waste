@@ -50,7 +50,7 @@ class ApiService {
         
         if (error.response?.statusCode == 401) {
           // Try to refresh token
-          final refreshed = await _refreshToken();
+          final refreshed = await refreshToken();
           if (refreshed) {
             // Retry the original request
             final token = await _storage.read(key: 'auth_token');
@@ -69,6 +69,45 @@ class ApiService {
       },
     ));
   }
+  
+  // Get Dio options with auth token
+  BaseOptions getDioOptions() {
+    return BaseOptions(
+      baseUrl: baseUrl,
+      connectTimeout: const Duration(seconds: 30),
+      receiveTimeout: const Duration(seconds: 30),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    );
+  }
+  
+  // Refresh token method
+  Future<bool> refreshToken() async {
+    try {
+      final refreshToken = await _storage.read(key: 'refresh_token');
+      if (refreshToken == null) return false;
+      
+      final response = await Dio().post(
+        '$baseUrl/auth/token/refresh/',
+        data: {'refresh': refreshToken},
+      );
+      
+      if (response.statusCode == 200) {
+        await _storage.write(key: 'auth_token', value: response.data['access']);
+        return true;
+      }
+      return false;
+    } catch (e) {
+      debugPrint('Token refresh error: $e');
+      return false;
+    }
+  }
+  
+  // Note: The private _refreshToken method was removed to avoid duplication
+  // as it's now replaced by the public refreshToken() method above
+  
+  // User authentication methods are defined below
 
 
   
@@ -138,7 +177,7 @@ class ApiService {
     }
   }
   
-  Future<bool> resetPassword(String email) async {
+  Future<bool> resetPassword({required String email}) async {
     try {
       final response = await _dio.post('/auth/reset-password/', data: {
         'email': email,
@@ -309,29 +348,43 @@ class ApiService {
     return token != null;
   }
 
-  // Token refresh method
-  Future<bool> _refreshToken() async {
+  // Generic HTTP methods for marketplace and other services
+  Future<dynamic> get(String path) async {
     try {
-      final refreshToken = await getRefreshToken();
-      if (refreshToken == null) return false;
-
-      final response = await _dio.post('/auth/token/refresh/', data: {
-        'refresh': refreshToken,
-      });
-
-      if (response.statusCode == 200) {
-        final data = response.data;
-        await _storage.write(key: 'auth_token', value: data['access']);
-        if (data.containsKey('refresh')) {
-          await _storage.write(key: 'refresh_token', value: data['refresh']);
-        }
-        return true;
-      }
-    } catch (e) {
-      debugPrint('Token refresh error: $e');
+      final response = await _dio.get(path);
+      return response.data;
+    } on DioException catch (e) {
+      throw _handleError(e);
     }
-    return false;
   }
+
+  Future<dynamic> post(String path, dynamic data) async {
+    try {
+      final response = await _dio.post(path, data: data);
+      return response.data;
+    } on DioException catch (e) {
+      throw _handleError(e);
+    }
+  }
+
+  Future<dynamic> put(String path, dynamic data) async {
+    try {
+      final response = await _dio.put(path, data: data);
+      return response.data;
+    } on DioException catch (e) {
+      throw _handleError(e);
+    }
+  }
+
+  Future<void> delete(String path) async {
+    try {
+      await _dio.delete(path);
+    } on DioException catch (e) {
+      throw _handleError(e);
+    }
+  }
+
+  // Token refresh method is already defined above
   
   String _handleError(DioException e) {
     debugPrint('Handling DioException: ${e.type}, Message: ${e.message}');
